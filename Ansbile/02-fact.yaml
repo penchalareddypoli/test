@@ -1,5 +1,6 @@
 - name: Gather and print Ansible facts
-  hosts: all
+  hosts: local
+  connection: local
   gather_facts: yes  # Automatically runs ansible.builtin.setup
 
   tasks:
