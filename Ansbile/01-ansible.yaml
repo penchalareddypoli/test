@@ -1,5 +1,5 @@
 - name: "ping the server"
-  hosts: local
+  hosts: abcd.net
   connection: local
   tasks:
   - name: "ping the web server"
