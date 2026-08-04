@@ -2,6 +2,6 @@
   hosts: local
   connection: local
   tasks:
-  - name: pringing the facts
-    ansible.builtin.debug:
-	  msg: {{ ansible_facts }}
+    - name: printing the facts
+      ansible.builtin.debug:
+        msg: {{ ansible_facts }}
