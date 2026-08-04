@@ -5,5 +5,7 @@
     COURSE: "This is from Play level variable"
   tasks:
     - name: variables print
+      vars:
+        COURSE: "This is from task varible"
       ansible.builtin.debug:
         msg: "{{ COURSE }}"
