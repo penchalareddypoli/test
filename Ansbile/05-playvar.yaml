@@ -1,6 +1,8 @@
 - name: Play level variable
   hosts: local
   connection: local
+  vars_files:
+    - staticvars.yaml
   vars:
     COURSE: "This is from Play level variable"
   tasks:
