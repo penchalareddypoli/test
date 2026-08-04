@@ -1,9 +1,7 @@
-- name: Gather and print Ansible facts
+- name: Facts gathering
   hosts: local
   connection: local
-  gather_facts: yes  # Automatically runs ansible.builtin.setup
-
   tasks:
-    - name: Print all facts
-      ansible.builtin.debug:
-        msg: {{ ansible_facts }}
+  - name: pringing the facts
+    ansible.builtin.debug:
+	  msg: {{ ansible_facts }}
