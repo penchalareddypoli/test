@@ -1,11 +1,10 @@
 - name: Play level variable
   hosts: local
   connection: local
-  vars:
-    COURSE: "This is from Play level variable"
+  vars_files:
+    - staticvars.yaml
+
   tasks:
     - name: variables print
-      vars:
-        COURSE: "This is from task varible"
       ansible.builtin.debug:
         msg: "{{ COURSE }}"
