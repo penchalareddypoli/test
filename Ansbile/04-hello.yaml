@@ -1,0 +1,7 @@
+- name: "Hello world"
+  hosts: local
+  connection: local
+  tasks:
+    - name: Testing ansible play book
+      ansible.builtin.debug:
+        msg: "Hello world"
